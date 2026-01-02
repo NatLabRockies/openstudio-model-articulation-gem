@@ -51,6 +51,7 @@ bundle exec rake openstudio:test_with_openstudio
 
 |OpenStudio Model Articulation Gem|OpenStudio|Ruby|
 |:--------------:|:----------:|:--------:|
+| 0.13.0         | 3.11     | 3.2.2  |
 | 0.12.2         | 3.10     | 3.2.2  |
 | 0.12.1         | 3.10     | 3.2.2  |
 | 0.12.0         | 3.10     | 3.2.2  |

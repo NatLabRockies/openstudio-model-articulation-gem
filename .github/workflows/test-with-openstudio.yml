@@ -12,12 +12,12 @@ jobs:
       S3_BUCKET: ext-gem-dashboard
 
     container: # Define the Docker container for the job. All subsequent steps run inside it.
-      image: nrel/openstudio:3.10.0
+      image: nrel/dev-3.11.0-rc2
       options: -u root -e "LANG=en_US.UTF-8" # These options are passed to the 'docker run' command internally
 
     steps:
       - name: Checkout Repository
-        # The repository will be checked out inside the 'nrel/openstudio:3.10.0' container
+        # The repository will be checked out inside the 'nrel/openstudio:3.11.0' container
         uses: actions/checkout@v4 # Use v4 for better security and features
         with:
           submodules: true # Set to true if your repository uses Git submodules
@@ -56,7 +56,7 @@ jobs:
         shell: bash # Specify the shell if needed, though bash is default for Ubuntu runners
         run: |
           # Fix git ownership issue in container
-          git config --global --add safe.directory /__w/openstudio-load-flexibility-measures-gem/openstudio-load-flexibility-measures-gem
+          git config --global --add safe.directory /__w/openstudio-model-articulation-measures-gem/openstudio-model-articulation-measures-gem
           
           echo "OpenStudio Version: $(openstudio --version)"
           echo "Ruby Version: $(ruby -v)"
