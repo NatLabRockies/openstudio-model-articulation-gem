@@ -1,5 +1,9 @@
 # OpenStudio Model Articulation Gems
 
+## Version 0.13.0
+* Updated dependency (openstudio-extension gem 0.9.3 to 0.9.7)
+* Updated dependency (openstudio-standards gem 0.8.2 to 0.8.5)
+
 ## Version 0.12.2
 * Updated dependency (openstudio-extension gem 0.9.2 to 0.9.3)
 

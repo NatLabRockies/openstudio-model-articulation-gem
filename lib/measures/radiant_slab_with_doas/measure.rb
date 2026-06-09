@@ -184,8 +184,10 @@ To reduce unmet hours, use an expanded comfort range as mentioned above, remove 
       runner.registerInfo('Removing existing HVAC systems from the model')
       if std.respond_to?('remove_HVAC')
         std.remove_HVAC(model) # OpenStuido 3.2.1 and earlierop use this, future versions will use snake_case method
-      else
+      elsif std.respond_to?('remove_hvac')
         std.remove_hvac(model)
+      else # method changed in OS Standard v 0.8.5
+        OpenstudioStandards::HVAC.remove_hvac(model)
       end
     end
 
@@ -288,7 +290,7 @@ To reduce unmet hours, use an expanded comfort range as mentioned above, remove 
 
     # add DOAS system to conditioned zones
     std.model_add_doas(model, conditioned_zones)
-    std.rename_air_loop_nodes(model)
+    OpenstudioStandards::HVAC.rename_air_loop_nodes(model)
 
     # set the heating and cooling sizing parameters
     std.model_apply_prm_sizing_parameters(model)
