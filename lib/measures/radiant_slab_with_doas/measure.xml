@@ -3,8 +3,8 @@
   <schema_version>3.1</schema_version>
   <name>radiant_slab_with_doas</name>
   <uid>8091a0c3-7760-4da6-adf4-133d55872816</uid>
-  <version_id>38680e13-08ef-49ff-a7c0-0b7c3d75afd7</version_id>
-  <version_modified>2025-08-01T14:58:32Z</version_modified>
+  <version_id>4608a19e-dd68-4e4d-9ecc-d17df450426e</version_id>
+  <version_modified>2026-06-08T03:22:49Z</version_modified>
   <xml_checksum>C49A7DAB</xml_checksum>
   <class_name>RadiantSlabWithDoas</class_name>
   <display_name>Radiant Slab with DOAS</display_name>
@@ -296,12 +296,12 @@ To reduce unmet hours, use an expanded comfort range as mentioned above, remove 
       <version>
         <software_program>OpenStudio</software_program>
         <identifier>2.9.0</identifier>
-        <min_compatible>2.9.0</min_compatible>
+        <min_compatible>3.11.0</min_compatible>
       </version>
       <filename>measure.rb</filename>
       <filetype>rb</filetype>
       <usage_type>script</usage_type>
-      <checksum>08122A36</checksum>
+      <checksum>752DEFB4</checksum>
     </file>
     <file>
       <filename>USA_CA_San.Francisco.Intl.AP.724940_TMY3.epw</filename>
